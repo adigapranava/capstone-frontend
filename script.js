@@ -27,6 +27,8 @@ var firebaseConfig = {
     }else{
         // remove door open from class list
         element.classList.remove("doorOpen");
+        var audio = new Audio('doorClosing.mp3');
+        audio.play();
     }
   });
   
